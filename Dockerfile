@@ -5,6 +5,8 @@ WORKDIR /app
 
 COPY . /app
 
+EXPOSE 8080
+
 RUN chmod 777 mvnw
 
 RUN ./mvnw clean install
